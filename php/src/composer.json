@@ -1,0 +1,18 @@
+{
+  "type": "project",
+  "autoload": {
+    "psr-4": {
+      "Netrebel\\": "app/",
+      "Netrebel\\Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "php": "^8.0",
+    "monolog/monolog": "^2.3",
+    "symfony/dependency-injection": "^5.3"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-latest",
+    "phpunit/phpunit": "^9.0"
+  }
+}
