@@ -16,7 +16,7 @@ class BasketItem
     public function __construct(Product $product, int $quantity)
     {
         $this->product = $product;
-        $this->quantity = $quantity < 0 ? 0 : $quantity;
+        $this->quantity = max($quantity, 0);
     }
 
     /**

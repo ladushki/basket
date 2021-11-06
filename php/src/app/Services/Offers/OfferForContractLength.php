@@ -7,7 +7,7 @@ use Netrebel\ValueObjects\Offer;
 
 class OfferForContractLength implements OfferCalculatorInterface
 {
-    private static $length = 12;
+    private static int $length = 12;
     private static float $discount = 10;
 
     /**

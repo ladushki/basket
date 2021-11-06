@@ -62,7 +62,7 @@ class Basket
     final public function add(Product $product, int $quantity): void
     {
         if (!$this->canAdd($product, $quantity)) {
-            throw new BasketException($product->getName().' already added.');
+           return;
         }
 
         $this->items[] = new BasketItem($product, $quantity);
